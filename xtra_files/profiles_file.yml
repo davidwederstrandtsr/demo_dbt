@@ -1,0 +1,22 @@
+# This is not the real profile.yml file
+# this is an example for my records
+# For more information on how to config
+# https://docs.getdbt.com/docs/profile
+
+snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ym97958.us-east-2.aws
+
+      # User/password auth
+      user: davidwederstrandtsr
+      password: CodeUp2020!!
+
+      role: ACCOUNTADMIN
+      database: DEMO_DB
+      warehouse: COMPUTE_WH
+      schema: PUBLIC
+      threads: 10
+      client_session_keep_alive: False
